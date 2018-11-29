@@ -1,0 +1,264 @@
+body {
+    font-family: "Trebuchet MS", sans-serif; 
+    font-size: 16px;
+    background-color: #a9a9a9;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #4161ff;
+    outline: none;
+}
+
+a:visited {
+    color: #4161ff;
+}
+
+.wrapper {
+    margin: 15px auto 50px auto;
+    max-width: 1200px;
+    min-width: 500px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 5px -1px 16px 1px rgba(0,0,0,0.75);
+}
+
+
+header {
+    padding: 50px 90px 5px 90px;
+    z-index: 1;
+    position: sticky;
+    top: -40px;
+    background-color: white;
+    border-radius: 5px 5px 150px 150px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+    box-shadow: 2px -2px 15px 1px rgba(0,0,0,0.5);
+}
+
+header section {
+    padding: 5px 0;
+    margin-left: 25px;
+    float: left;
+}
+
+header section p:nth-child(2) {
+    padding-bottom: 3px;
+}
+
+header section ul {
+    list-style-type: none;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+header section ul li {
+    display: inline;
+}
+
+header section h1 {
+    font-size: 40px;
+    font-family: Georgia;
+}
+
+header section span {
+    padding: 0;
+}
+
+header section ul li:not(:last-child){
+    border-right: 1px solid;
+}
+
+header section ul li {
+    padding: 0 10px 0 2px;
+}
+
+header section ul li:before {
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px; 
+    height: 13px;
+    content:"";
+}
+
+header section ul li:nth-child(1):before {
+    background-image: url("ico/ico-place.png");
+}
+
+header section ul li:nth-child(2):before {
+    background-image: url("ico/ico-phone.png");
+}
+
+header section ul li:nth-child(3):before {
+    background-image: url("ico/ico-mail.png");
+}
+
+main section {
+    padding: 25px 90px;
+    text-align: center;
+}
+
+main section p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+main section div {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+main section div img {
+    display: block;
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    box-shadow: 5px -1px 16px 1px rgba(0,0,0,0.75);
+}
+
+table {
+    width: 100%;
+    border-top: 1px solid  #a9a9a9;
+    border-collapse: collapse;
+    position: relative;
+}
+
+table tr td {
+    vertical-align: top;
+}
+
+table tr td:first-child {
+    width: 200px;
+    position: relative;
+}
+
+table tr th{
+    text-align: left;
+}
+
+table tr td, table tr th{
+    padding-top: 25px;
+}
+
+table tr td h3 {
+    margin: 2px;
+}
+
+table tr td span {
+    margin: 2px;
+    color: #696969;
+}
+
+table tr td p {
+    margin: 2px;
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+table tr td ul {
+    margin: 2px;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+table tr td:first-child, table tr th {
+    border-right: 1px solid  #a9a9a9;
+    padding-left: 100px;
+}
+
+table tr td:nth-child(2) {
+    padding-left: 25px;
+    padding-right: 100px;
+}
+
+table tr:last-child td {
+    padding-bottom: 50px;
+}
+
+table tr td:first-child::after {
+    content: "";
+    display: block;
+    background-color: #778cf2;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: -8px;
+    top: 30px;
+}
+
+table::before {
+    content: "";
+    display: block;
+    border: 16px solid transparent;
+    border-top: 18px solid #a9a9a9;
+    position: absolute;
+    left: 287px;
+    top: 0;
+}
+
+table::after {
+    content: "";
+    display: block;
+    border: 16px solid transparent;
+    border-top: 18px solid white;
+    position: absolute;
+    left: 287px;
+    top: -2px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding-left: 2%;
+        padding-right: 2%;
+        border-radius: 0;
+    }
+
+    main section {
+        padding-left: 2%;
+        padding-right: 2%;       
+    }
+
+
+    table tr td:first-child, table tr th {
+        padding-left: 2%;
+    }
+
+    table tr td:nth-child(2) {
+        padding-right: 2%;
+    }
+
+    table::before {
+        left: 187px;
+    }
+    
+    table::after {
+        left: 187px;
+    }
+}
